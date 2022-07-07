@@ -9,6 +9,8 @@ import { PackageDetails } from "./pages/packageDetails/packageDetails";
 import PledgeStatus from "./pages/pledgeStatus/pledgeStatus";
 import EditPledge from "./pages/editPledge/editPledge";
 import "./App.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -41,6 +43,7 @@ function App() {
       <footer className="footer footer--dark">
         <div>@OpenSource.com</div>
       </footer>
+      <ToastContainer />
     </div>
   );
 }
